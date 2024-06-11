@@ -23,7 +23,7 @@ USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 
 PICS = (environ.get('PICS', 'https://telegra.ph/file/3101f70842c894b5c65ac.png https://telegra.ph/file/bce642e548fbcaf07a21e.png https://telegra.ph/file/a5670cd2d98856b765394.png https://telegra.ph/file/392d161398022904645f9.png')).split() #SAMPLE PIC
 NOR_IMG = environ.get("NOR_IMG", "https://graph.org/file/e20b5fdaf217252964202.jpg")
-MELCOW_VID = environ.get("MELCOW_VID", "https://telegra.ph/file/85d361ab4cb6511006022.mp4")
+MELCOW_VID = environ.get("MELCOW_VID", "https://graph.org/file/1ba95d22d21576aa648a2.mp4")
 SPELL_IMG = environ.get("SPELL_IMG", "https://telegra.ph/file/86b7b7e2aa7e38f328902.jpg")
 SUBSCRIPTION = (environ.get('SUBSCRIPTION', 'https://telegra.ph/file/b536a81d9a58011f842e0.png'))
 CODE = (environ.get('CODE', 'https://telegra.ph/file/880dd0229dffef683c7f1.jpg'))
