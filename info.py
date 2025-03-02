@@ -36,7 +36,7 @@ STREAMHTO = (environ.get('STREAMHTO', 'https://t.me/World4kMovie/19'))
 # Admins, Channels & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '5387108114').split()]
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002147340725').split()] #Channel id for auto indexing ( make sure bot is admin )
-auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
+auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '5387108114').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 PREMIUM_USER = [int(user) if id_pattern.search(user) else user for user in environ.get('PREMIUM_USER', '5387108114').split()]
 auth_channel = environ.get('AUTH_CHANNEL', '-1002064389813') #Channel / Group Id for force sub ( make sure bot is admin )
@@ -64,7 +64,7 @@ HOWTOVERIFY = environ.get('HOWTOVERIFY', 'https://t.me/World4kMovie/19') # How t
 # Others
 SHORTLINK_URL = environ.get('SHORTLINK_URL', 'shrinkme.io')
 SHORTLINK_API = environ.get('SHORTLINK_API', '320f4de26a9df67ad35d81f5dbc846cb084d0abb')
-IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', True))  # else--> True
+IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', False))  # else--> True
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 MAX_B_TN = environ.get("MAX_B_TN", "5")
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
@@ -77,7 +77,7 @@ MSG_ALRT = environ.get('MSG_ALRT', 'ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : ʟᴇʏᴏ
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001989735997')) #Log channel id ( make sure bot is admin )
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/LeyonRequeast') #Support group link ( make sure bot is admin )
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
-IMDB = is_enabled((environ.get('IMDB', "False")), False)
+IMDB = is_enabled((environ.get('IMDB', "True")), False)
 AUTO_FFILTER = is_enabled((environ.get('AUTO_FFILTER', "True")), True)
 AUTO_DELETE = is_enabled((environ.get('AUTO_DELETE', "True")), True)
 SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "True")), True)
